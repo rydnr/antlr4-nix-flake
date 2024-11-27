@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Record of phased-in incompatible language changes.
 
 Each line is of the form:

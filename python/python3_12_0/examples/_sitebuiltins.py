@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """
 The objects used by the site module to add custom builtins.
 """

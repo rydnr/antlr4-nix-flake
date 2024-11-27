@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 ##
 ## Project      : a helper class to implement specific PEG grammar expressions in an ANTLR4 grammar
 ##

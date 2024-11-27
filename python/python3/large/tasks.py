@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Support for tasks, coroutines and the scheduler."""
 
 __all__ = ['Task',

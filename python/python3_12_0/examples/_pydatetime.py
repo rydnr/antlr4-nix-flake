@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Concrete date/time and related types.
 
 See http://www.iana.org/time-zones/repository/tz-link.html for

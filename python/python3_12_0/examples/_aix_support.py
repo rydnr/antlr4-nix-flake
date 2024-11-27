@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Shared AIX support functions."""
 
 import sys

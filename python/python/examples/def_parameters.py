@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # def_parameters: def_parameter (COMMA def_parameter)*;
 # def_parameter: named_parameter (ASSIGN test)?;
 # named_parameter: NAME (COLON test)?;

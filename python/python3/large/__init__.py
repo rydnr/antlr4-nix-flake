@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """The asyncio package, tracking PEP 3156."""
 
 import sys

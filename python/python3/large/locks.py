@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Synchronization primitives."""
 
 __all__ = ['Lock', 'Event', 'Condition', 'Semaphore', 'BoundedSemaphore']

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Base implementation of event loop.
 
 The event loop can be broken up into a multiplexer (the part

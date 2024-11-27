@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # trailer
 #     : OPEN_PAREN (argument (COMMA argument)* COMMA?)? CLOSE_PAREN
 #     | OPEN_BRACKET subscript (COMMA subscript)* COMMA? CLOSE_BRACKET

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Generic interface to all dbm clones.
 
 Instead of

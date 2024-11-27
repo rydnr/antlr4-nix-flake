@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Thread-local objects.
 
 (Note that this module provides a Python version of the threading.local

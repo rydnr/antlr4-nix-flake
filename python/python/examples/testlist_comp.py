@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # testlist_comp
 #     : (test | star_expr) (comp_for | (COMMA (test | star_expr))* COMMA?)
 #     ;

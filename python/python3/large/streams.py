@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Stream-related things."""
 
 __all__ = ['StreamReader', 'StreamWriter', 'StreamReaderProtocol',

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Selector event loop for Unix with signal handling."""
 
 import errno

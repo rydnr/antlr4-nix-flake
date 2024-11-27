@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 #! /usr/bin/env python3
 
 """Base16, Base32, Base64 (RFC 3548), Base85 and Ascii85 data encodings"""

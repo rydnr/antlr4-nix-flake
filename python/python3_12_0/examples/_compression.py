@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Internal classes used by the gzip, lzma and bz2 modules"""
 
 import io

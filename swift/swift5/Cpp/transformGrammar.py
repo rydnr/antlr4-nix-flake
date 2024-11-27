@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """The script transforms the grammar to fit for the c++ target """
 import sys
 import re

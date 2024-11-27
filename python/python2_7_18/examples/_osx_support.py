@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Shared OS X support functions."""
 
 import os

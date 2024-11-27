@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 from typing import TextIO
 from antlr4 import *
 from antlr4.Token import CommonToken

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 import sys, os, re, shutil
 
 # This script was originally found in the directory of the Golang Grammar, used for the transformation of the Golang Parser to be compatible with Python Runtime

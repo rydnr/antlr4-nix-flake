@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Python implementations of some algorithms for use by longobject.c.
 The goal is to provide asymptotically faster algorithms that can be
 used for operations on integers with many digits.  In those cases, the

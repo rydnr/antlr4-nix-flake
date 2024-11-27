@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 
 # First, check this one
 # import_stmt: IMPORT dotted_as_names

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 from antlr4 import *
 
 class PlSqlLexerBase(Lexer):

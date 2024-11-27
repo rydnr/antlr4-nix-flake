@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 __all__ = ['create_subprocess_exec', 'create_subprocess_shell']
 
 import subprocess

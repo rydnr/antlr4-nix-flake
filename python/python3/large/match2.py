@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 def file_handler_v2(command):
     match command.split():
         case ['show']:

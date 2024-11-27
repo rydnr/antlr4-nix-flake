@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # while_stmt: WHILE test COLON suite else_clause?
 
 # WHILE test COLON suite

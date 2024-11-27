@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Constants."""
 
 # After the connection is lost, log warnings after this many write()s.

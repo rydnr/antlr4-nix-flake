@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # yield_expr
 #     : YIELD yield_arg?
 #     ;

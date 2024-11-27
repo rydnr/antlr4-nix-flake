@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # simple_stmt: small_stmt (SEMI_COLON small_stmt)* SEMI_COLON? (NEWLINE | EOF)
 
 # small_stmt NEWLINE

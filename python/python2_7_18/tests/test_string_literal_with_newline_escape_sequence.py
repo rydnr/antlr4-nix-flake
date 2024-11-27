@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # COMMAND LINE:
 # grun Python file_input -tokens test_string_literal_with_newline_escape_sequence.py
 #

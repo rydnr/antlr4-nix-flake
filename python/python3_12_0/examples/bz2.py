@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Interface to the libbzip2 compression library.
 
 This module provides a file interface, classes for incremental

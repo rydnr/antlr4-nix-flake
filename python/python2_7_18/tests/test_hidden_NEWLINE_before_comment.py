@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 def inc(value):
 # this is a comment (or type comment)
     return value + 1

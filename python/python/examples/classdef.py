@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # classdef: CLASS name (OPEN_PAREN arglist? CLOSE_PAREN)? COLON suite
 
 # CLASS NAME COLON suite

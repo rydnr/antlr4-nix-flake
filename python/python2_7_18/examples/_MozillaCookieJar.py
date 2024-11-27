@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Mozilla / Netscape cookie loading / saving."""
 
 import re, time

@@ -26,6 +26,13 @@
       inputs.nixos.follows = "nixos";
       url = "github:pythoneda-shared-pythoneda-def/banner/0.0.28";
     };
+    pythoneda-shared-pythoneda-domain = {
+      inputs.flake-utils.follows = "flake-utils";
+      inputs.nixos.follows = "nixos";
+      inputs.pythoneda-shared-pythoneda-banner.follows =
+        "pythoneda-shared-pythoneda-banner";
+      url = "github:pythoneda-shared-pythoneda-def/domain/0.0.3";
+    };
   };
   outputs = inputs:
     with inputs;
@@ -53,11 +60,11 @@
         nixpkgsRelease =
           builtins.replaceStrings [ "\n" ] [ "" ] "nixos-${nixosVersion}";
         shared = import "${pythoneda-shared-pythoneda-banner}/nix/shared.nix";
-        antlr4-nix-flake-for = { antlr4python, python }:
+        antlr4-nix-flake-for = { antlr4-python-runtime, python }:
           let
             pnameWithUnderscores =
               builtins.replaceStrings [ "-" ] [ "_" ] pname;
-            pythonpackage = "pythoneda";
+            pythonpackage = "rydnr.antlr4.nix_flake";
             pythonVersionParts = builtins.splitVersion python.version;
             pythonMajorVersion = builtins.head pythonVersionParts;
             pythonMajorMinorVersion =
@@ -69,15 +76,16 @@
             projectDir = ./.;
             pyprojectTemplateFile = ./pyprojecttoml.template;
             pyprojectTemplate = pkgs.substituteAll {
+              antlr4PythonRuntime = antlr4-python-runtime.version;
               authors = builtins.concatStringsSep ","
                 (map (item: ''"${item}"'') maintainers);
               desc = description;
-              inherit homepage pname pythonMajorMinorVersion pythonpackage
-                version;
+              inherit homepage pname pythonMajorMinorVersion pythonMajorVersion
+                pythonpackage version;
               package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
               src = pyprojectTemplateFile;
             };
-            src = ./nix-flake;
+            src = ./.;
 
             format = "pyproject";
 
@@ -85,9 +93,9 @@
               pip
               pkgs.jq
               poetry-core
-              antlr4
+              pkgs.antlr4
             ];
-            propagatedBuildInputs = with python.pkgs; [ antlr4python ];
+            propagatedBuildInputs = with python.pkgs; [ antlr4-python-runtime ];
 
             pythonImportsCheck = [ pythonpackage ];
 
@@ -98,9 +106,14 @@
               cp ${pyprojectTemplate} $sourceRoot/pyproject.toml
               mkdir -p $sourceRoot/rydnr/antlr4/nix_flake
               for d in rydnr rydnr/antlr4 rydnr/antlr4/nix_flake; do
-              echo '__path__ = __import__("pkgutil").extend_path(__path__, __name__)' > $sourceRoot/$d/__init__.py
-              antlr4 -Dlanguage=Python${pythonMajorVersion} $sourceRoot/NixFlake.g4
-              mv *.py *.tokens *.interp $sourceRoot/rydnr/antlr4/nix_flake/
+                echo "__path__ = __import__(\"pkgutil\").extend_path(__path__, __name__)" > $sourceRoot/$d/__init__.py;
+              done;
+              pushd $sourceRoot
+              ls -lrthlia
+              ${pkgs.antlr4}/bin/antlr4 -Dlanguage=Python${pythonMajorVersion} NixFlake.g4
+              ls -lrthlia
+              mv *.py *.tokens *.interp rydnr/antlr4/nix_flake/
+              popd
             '';
 
             postInstall = ''
@@ -112,7 +125,6 @@
               done
               popd
               mkdir $out/dist
-              cp -r ${scripts} $out/dist/scripts
               cp dist/${wheelName} $out/dist
               jq ".url = \"$out/dist/${wheelName}\"" $out/lib/python${pythonMajorMinorVersion}/site-packages/${pnameWithUnderscores}-${version}.dist-info/direct_url.json > temp.json && mv temp.json $out/lib/python${pythonMajorMinorVersion}/site-packages/${pnameWithUnderscores}-${version}.dist-info/direct_url.json
             '';
@@ -133,9 +145,10 @@
             extra-namespaces = "";
             nixpkgs-release = nixpkgsRelease;
             package = packages.antlr4-nix-flake-python38;
-            antlr4-nix-flake = packages.antlr4-nix-flake-python38;
             pythoneda-shared-pythoneda-banner =
               pythoneda-shared-pythoneda-banner.packages.${system}.pythoneda-shared-pythoneda-banner-python38;
+            pythoneda-shared-pythoneda-domain =
+              pythoneda-shared-pythoneda-domain.packages.${system}.pythoneda-shared-pythoneda-domain-python38;
             python = pkgs.python38;
             inherit archRole layer org pkgs repo space;
           };
@@ -146,9 +159,10 @@
             extra-namespaces = "";
             nixpkgs-release = nixpkgsRelease;
             package = packages.antlr4-nix-flake-python39;
-            antlr4-nix-flake = packages.antlr4-nix-flake-python39;
             pythoneda-shared-pythoneda-banner =
               pythoneda-shared-pythoneda-banner.packages.${system}.pythoneda-shared-pythoneda-banner-python39;
+            pythoneda-shared-pythoneda-domain =
+              pythoneda-shared-pythoneda-domain.packages.${system}.pythoneda-shared-pythoneda-domain-python39;
             python = pkgs.python39;
             inherit archRole layer org pkgs repo space;
           };
@@ -159,9 +173,10 @@
             extra-namespaces = "";
             nixpkgs-release = nixpkgsRelease;
             package = packages.antlr4-nix-flake-python310;
-            antlr4-nix-flake = packages.antlr4-nix-flake-python310;
             pythoneda-shared-pythoneda-banner =
               pythoneda-shared-pythoneda-banner.packages.${system}.pythoneda-shared-pythoneda-banner-python310;
+            pythoneda-shared-pythoneda-domain =
+              pythoneda-shared-pythoneda-domain.packages.${system}.pythoneda-shared-pythoneda-domain-python310;
             python = pkgs.python310;
             inherit archRole layer org pkgs repo space;
           };
@@ -172,9 +187,10 @@
             extra-namespaces = "";
             nixpkgs-release = nixpkgsRelease;
             package = packages.antlr4-nix-flake-python311;
-            antlr4-nix-flake = packages.antlr4-nix-flake-python311;
             pythoneda-shared-pythoneda-banner =
               pythoneda-shared-pythoneda-banner.packages.${system}.pythoneda-shared-pythoneda-banner-python311;
+            pythoneda-shared-pythoneda-domain =
+              pythoneda-shared-pythoneda-domain.packages.${system}.pythoneda-shared-pythoneda-domain-python311;
             python = pkgs.python311;
             inherit archRole layer org pkgs repo space;
           };
@@ -183,20 +199,21 @@
           default = antlr4-nix-flake-default;
           antlr4-nix-flake-default = antlr4-nix-flake-python311;
           antlr4-nix-flake-python38 = antlr4-nix-flake-for {
-            antlr4python = pkgs.python38.pkgs.antlr4-python3-runtime;
+            antlr4-python-runtime = pkgs.python38.pkgs.antlr4-python3-runtime;
             python = pkgs.python38;
           };
           antlr4-nix-flake-python39 = antlr4-nix-flake-for {
-            antlr4python = pkgs.python39.pkgs.antlr4-python3-runtime;
+            antlr4-python-runtime = pkgs.python39.pkgs.antlr4-python3-runtime;
             python = pkgs.python39;
           };
           antlr4-nix-flake-python310 = antlr4-nix-flake-for {
-            antlr4python = pkgs.python310.pkgs.antlr4-python3-runtime;
+            antlr4-python-runtime = pkgs.python310.pkgs.antlr4-python3-runtime;
             python = pkgs.python310;
           };
           antlr4-nix-flake-python311 = antlr4-nix-flake-for {
-            antlr4python = pkgs.python311.pkgs.antlr4-python3-runtime;
+            antlr4-python-runtime = pkgs.python311.pkgs.antlr4-python3-runtime;
             python = pkgs.python311;
           };
+        };
       });
 }

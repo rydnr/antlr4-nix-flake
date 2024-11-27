@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Shared support for scanning document type declarations in HTML and XHTML.
 
 This module is used as a foundation for the html.parser module.  It has no

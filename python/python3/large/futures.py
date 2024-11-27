@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """A Future class similar to the one in PEP 3148."""
 
 __all__ = ['CancelledError', 'TimeoutError', 'InvalidStateError',

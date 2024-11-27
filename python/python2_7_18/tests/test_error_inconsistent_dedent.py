@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # COMMAND LINE:
 # grun Python file_input -tokens test_error_inconsistent_dedent.py
 #

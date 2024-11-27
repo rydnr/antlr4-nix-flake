@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Stuff to parse AIFF-C and AIFF files.
 
 Unless explicitly stated otherwise, the description below is true

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Abstract Protocol class."""
 
 __all__ = ['BaseProtocol', 'Protocol', 'DatagramProtocol',

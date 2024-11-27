@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # dictorsetmaker
 #     : (test COLON test | POWER expr) (COMMA (test COLON test | POWER expr))* COMMA? // key_datum_list
 #     | test COLON test comp_for                                                      // dict_comprehension

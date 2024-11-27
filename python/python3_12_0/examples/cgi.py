@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 #! /usr/local/bin/python
 
 # NOTE: the above "/usr/local/bin/python" is NOT a mistake.  It is

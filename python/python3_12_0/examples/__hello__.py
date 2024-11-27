@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 initialized = True
 
 class TestFrozenUtf8_1:

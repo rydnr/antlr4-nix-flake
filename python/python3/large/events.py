@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Event loop and event loop policy."""
 
 __all__ = ['AbstractEventLoopPolicy',

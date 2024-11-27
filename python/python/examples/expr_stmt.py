@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # expr_stmt: testlist_star_expr assign_part?
 #
 # testlist_star_expr : (test | star_expr) (COMMA (test | star_expr))* COMMA?

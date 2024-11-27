@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # for_stmt: ASYNC? FOR exprlist IN testlist COLON suite else_clause?
 
 # FOR exprlist IN testlist COLON suite

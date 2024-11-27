@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # logical_test
 #     : comparison
 #     | NOT logical_test

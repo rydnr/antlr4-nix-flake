@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # atom
 #     : OPEN_PAREN (yield_expr | testlist_comp)? CLOSE_PAREN
 #     | OPEN_BRACKET testlist_comp? CLOSE_BRACKET

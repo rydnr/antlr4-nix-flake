@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # del_stmt: DEL exprlist
 
 del x, d[1], await f

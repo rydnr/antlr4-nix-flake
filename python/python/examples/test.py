@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # test
 #     : logical_test (IF logical_test ELSE test)?
 #     | LAMBDA varargslist? COLON test

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # typedargslist
 #     : (def_parameters COMMA)? (args (COMMA def_parameters)? (COMMA kwargs)? | kwargs)
 #     | def_parameters

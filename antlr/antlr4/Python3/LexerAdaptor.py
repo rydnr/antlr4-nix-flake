@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """
  [The "BSD licence"]
  Copyright (c) 2005-2007 Terence Parr

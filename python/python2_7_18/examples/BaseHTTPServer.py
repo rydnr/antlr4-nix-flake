@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """HTTP server base class.
 
 Note: the class in this module doesn't implement any HTTP request; see

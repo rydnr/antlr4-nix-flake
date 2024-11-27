@@ -21,13 +21,12 @@ name = "@pname@"
 version = "@version@"
 description = "@desc@"
 authors = [ @authors@ ]
-readme = "README.md"
 homepage = "@homepage@"
 packages = [{include = "@package@"}]
 
 [tool.poetry.dependencies]
 python = "^@pythonMajorMinorVersion@"
-antl4python = "^@antlr4python@"
+antlr4-python@pythonMajorVersion@-runtime = "^@antlr4PythonRuntime@"
 
 [build-system]
 requires = ["poetry-core"]

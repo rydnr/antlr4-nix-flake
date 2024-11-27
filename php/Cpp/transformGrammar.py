@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 import sys, os, re, shutil
 
 def main(argv):

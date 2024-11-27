@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # argument
 #     : test (comp_for | ASSIGN test)?
 #     | (POWER | STAR) test

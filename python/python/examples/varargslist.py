@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # varargslist
 #     : (vardef_parameters COMMA)? (varargs (COMMA vardef_parameters)? (COMMA varkwargs)? | varkwargs) COMMA?
 #     | vardef_parameters COMMA?

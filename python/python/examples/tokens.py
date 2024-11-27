@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 DECIMAL = 0000000000
 DECIMAL = 1234567890
 OCT_1   = 0o01234567

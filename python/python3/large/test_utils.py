@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Utilities shared by tests."""
 
 import collections

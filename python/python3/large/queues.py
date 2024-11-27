@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Queues"""
 
 __all__ = ['Queue', 'PriorityQueue', 'LifoQueue', 'QueueFull', 'QueueEmpty']

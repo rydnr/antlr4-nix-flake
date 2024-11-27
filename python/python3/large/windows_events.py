@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Selector and proactor event loops for Windows."""
 
 import _winapi

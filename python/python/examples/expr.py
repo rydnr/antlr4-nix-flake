@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # expr
 #     : AWAIT? atom trailer*
 #     | <assoc=right> expr op=POWER expr

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Event loop using a proactor and related classes.
 
 A proactor is a "notify-on-completion" multiplexer.  Currently a

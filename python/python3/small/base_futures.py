@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 __all__ = []
 
 import concurrent.futures._base

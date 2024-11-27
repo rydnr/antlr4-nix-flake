@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 command = 'Hello, World!'
 match command:
     case 'Hello, World!':

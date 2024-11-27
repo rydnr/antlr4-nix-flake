@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """More comprehensive traceback formatting for Python scripts.
 
 To enable this module, do:

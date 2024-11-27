@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Load / save to libwww-perl (LWP) format files.
 
 Actually, the format is slightly extended from that used by LWP's

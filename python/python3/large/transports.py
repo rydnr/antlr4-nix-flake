@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Abstract Transport class."""
 
 from asyncio import compat

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Compatibility helpers for the different Python versions."""
 
 import sys

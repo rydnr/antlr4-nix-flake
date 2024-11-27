@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # with_stmt: ASYNC? WITH with_item (COMMA with_item)* COLON suite
 
 # WITH with_item COLON suite

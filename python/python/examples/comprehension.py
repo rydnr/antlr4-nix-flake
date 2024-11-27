@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # comp_for
 #     : FOR exprlist IN logical_test comp_iter?
 #     ;

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """
 atexit.py - allow programmer to define multiple exit functions to be executed
 upon normal program termination.

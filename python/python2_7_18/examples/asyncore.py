@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # -*- Mode: Python -*-
 #   Id: asyncore.py,v 2.51 2000/09/07 22:29:26 rushing Exp
 #   Author: Sam Rushing <rushing@nightmare.com>

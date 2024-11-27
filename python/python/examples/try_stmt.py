@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 # try_stmt: TRY COLON suite (except_clause+ else_clause? finaly_clause? | finaly_clause)
 
 # TRY COLON suite except_clause

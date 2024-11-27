@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Bastionification utility.
 
 A bastion (for another object -- the 'original') is an object that has

@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 import sys, os, re, shutil
 from glob import glob
 from pathlib import Path

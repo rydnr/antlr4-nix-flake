@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """Event loop using a selector and related classes.
 
 A selector is a "notify-when-ready" multiplexer.  For a subclass which

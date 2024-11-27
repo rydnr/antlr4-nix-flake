@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 import sys
 from enum import Enum
 from typing import TextIO
